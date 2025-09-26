@@ -306,7 +306,7 @@ const Dashboard = () => {
       </div>
 
       {/* Footer */}
-      <footer className="mt-16 bg-muted/30 p-8">
+      <footer className="mt-16 bg-blue-100 p-8">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-muted-foreground mb-4">
             © 2024 Nirwaan - Supporting your mental health journey with care and professionalism

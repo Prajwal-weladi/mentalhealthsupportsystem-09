@@ -167,7 +167,7 @@ export default function UserDashboard() {
   }
 
   return (
-    <div className="min-h-screen animated-bg floating-orbs particle-animation">
+    <div className="min-h-screen bg-blue-50 floating-orbs particle-animation">
       {/* Enhanced Animated background layers */}
       <div className="absolute inset-0 opacity-30 pointer-events-none overflow-hidden">
         {/* Large floating orbs */}
@@ -544,6 +544,21 @@ export default function UserDashboard() {
           </TabsContent>
         </Tabs>
       </div>
+      
+      {/* Footer */}
+      <footer className="mt-16 bg-blue-100 p-8">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-muted-foreground mb-4">
+            © 2024 Nirwaan - Your kawaii mental health companion ✨
+          </p>
+          <div className="flex justify-center space-x-6 text-sm">
+            <a href="#" className="text-primary hover:underline">Privacy Policy</a>
+            <a href="#" className="text-primary hover:underline">Terms of Service</a>
+            <a href="#" className="text-primary hover:underline">Crisis Support: 988</a>
+            <a href="#" className="text-primary hover:underline">Contact Us</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
