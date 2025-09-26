@@ -1,8 +1,4 @@
 
-
-**URL**: https://mentalhealthsupportsystem.lovable.app/
-
-
 Follow these steps:
 
 ```sh
