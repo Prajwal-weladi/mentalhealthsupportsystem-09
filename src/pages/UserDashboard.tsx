@@ -168,13 +168,46 @@ export default function UserDashboard() {
 
   return (
     <div className="min-h-screen animated-bg floating-orbs particle-animation">
-      {/* Animated background layers */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-kawaii-blue/30 rounded-full animate-bounce-gentle blur-xl"></div>
-        <div className="absolute top-32 right-20 w-24 h-24 bg-kawaii-pink/30 rounded-full animate-float blur-lg"></div>
-        <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-kawaii-yellow/30 rounded-full animate-sparkle blur-2xl"></div>
-        <div className="absolute bottom-32 right-1/3 w-28 h-28 bg-kawaii-green/30 rounded-full animate-heartbeat blur-xl"></div>
-        <div className="absolute top-1/2 left-1/2 w-36 h-36 bg-kawaii-purple/30 rounded-full animate-wiggle blur-2xl transform -translate-x-1/2 -translate-y-1/2"></div>
+      {/* Enhanced Animated background layers */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none overflow-hidden">
+        {/* Large floating orbs */}
+        <div className="absolute top-10 left-10 w-32 h-32 bg-kawaii-blue/40 rounded-full animate-bounce-gentle blur-xl"></div>
+        <div className="absolute top-32 right-20 w-24 h-24 bg-kawaii-pink/40 rounded-full animate-float blur-lg"></div>
+        <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-kawaii-yellow/40 rounded-full animate-sparkle blur-2xl"></div>
+        <div className="absolute bottom-32 right-1/3 w-28 h-28 bg-kawaii-green/40 rounded-full animate-heartbeat blur-xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-36 h-36 bg-kawaii-purple/40 rounded-full animate-wiggle blur-2xl transform -translate-x-1/2 -translate-y-1/2"></div>
+        
+        {/* Additional floating shapes */}
+        <div className="absolute top-20 right-1/4 w-20 h-20 bg-accent/30 rounded-full animate-bounce-gentle blur-lg" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-40 left-20 w-16 h-16 bg-primary/30 rounded-full animate-float blur-md" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-2/3 right-10 w-12 h-12 bg-secondary/30 rounded-full animate-sparkle blur-sm" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-1/4 left-2/3 w-8 h-8 bg-kawaii-pink/50 rounded-full animate-heartbeat blur-sm" style={{ animationDelay: '1.5s' }}></div>
+        
+        {/* Triangle shapes */}
+        <div className="absolute top-40 left-1/3 w-0 h-0 animate-wiggle" style={{ 
+          borderLeft: '15px solid transparent',
+          borderRight: '15px solid transparent',
+          borderBottom: '25px solid hsl(var(--kawaii-green) / 0.3)',
+          filter: 'blur(2px)',
+          animationDelay: '0.8s'
+        }}></div>
+        <div className="absolute bottom-60 right-1/4 w-0 h-0 animate-bounce-gentle" style={{ 
+          borderLeft: '20px solid transparent',
+          borderRight: '20px solid transparent',
+          borderBottom: '30px solid hsl(var(--kawaii-blue) / 0.3)',
+          filter: 'blur(3px)',
+          animationDelay: '2.2s'
+        }}></div>
+        
+        {/* Star shapes */}
+        <div className="absolute top-1/3 right-1/2 animate-sparkle" style={{ animationDelay: '1.8s' }}>
+          <div className="w-4 h-4 bg-kawaii-yellow/40 transform rotate-45 blur-sm"></div>
+          <div className="w-4 h-4 bg-kawaii-yellow/40 transform -rotate-45 absolute top-0 blur-sm"></div>
+        </div>
+        <div className="absolute bottom-1/3 left-1/2 animate-rainbow-shift" style={{ animationDelay: '0.3s' }}>
+          <div className="w-3 h-3 bg-kawaii-purple/40 transform rotate-45 blur-sm"></div>
+          <div className="w-3 h-3 bg-kawaii-purple/40 transform -rotate-45 absolute top-0 blur-sm"></div>
+        </div>
       </div>
       {/* Welcome Modal */}
       {showWelcomeModal && (
@@ -229,9 +262,10 @@ export default function UserDashboard() {
         </div>
       )}
 
-      {/* Animated Hero Header */}
+      {/* Enhanced Animated Hero Header */}
       <header className="relative overflow-hidden z-10">
-        <div className="absolute inset-0 gradient-hero opacity-90" />
+        <div className="absolute inset-0 gradient-rainbow opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-kawaii-pink/20 via-kawaii-blue/20 to-kawaii-purple/20 animate-rainbow-shift" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 z-10">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-4">
