@@ -276,7 +276,7 @@ export default function UserDashboard() {
                 <h1 className="text-4xl font-bold text-white mb-2">
                   Nirwaan ✨
                 </h1>
-                <p className="text-white/90">Your kawaii mental health companion!</p>
+                <p className="text-white/90">A journey to peace of mind.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -549,7 +549,7 @@ export default function UserDashboard() {
       <footer className="mt-16 bg-blue-100 p-8">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-muted-foreground mb-4">
-            © 2024 Nirwaan - Your kawaii mental health companion ✨
+            © SIH Nirwaan - A Jouney to Peace of Mind ✨ by GeForce
           </p>
           <div className="flex justify-center space-x-6 text-sm">
             <a href="#" className="text-primary hover:underline">Privacy Policy</a>

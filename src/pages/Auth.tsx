@@ -103,7 +103,7 @@ export default function Auth() {
               <h1 className="text-4xl font-bold text-gradient rainbow-text">Nirwaan</h1>
             </div>
             <p className="text-muted-foreground text-lg animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-              Your kawaii mental wellness companion ✨
+              A Journey to peace of mind ✨
             </p>
           </div>
 
@@ -244,7 +244,7 @@ export default function Auth() {
                           <Label htmlFor="patient" className="flex items-center gap-2 cursor-pointer flex-1">
                             <UserCheck className="w-4 h-4 text-kawaii-blue animate-bounce-gentle" />
                             <div>
-                              <div className="font-medium">Patient 💙</div>
+                              <div className="font-medium">User 💙</div>
                               <div className="text-sm text-muted-foreground">Seek mental wellness support (◕‿◕)</div>
                             </div>
                           </Label>
